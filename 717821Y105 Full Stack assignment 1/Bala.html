@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Web Page with Three-Column Layout</title>
+    <style>
+        /* Reset some default styles to improve consistency */
+        body, h1, h2, h3, p, ul, li, img {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f8f8;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Main content area styles */
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+
+        /* Column styles */
+        .column {
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        /* Responsive layout for smaller screens */
+        @media (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Welcome to My Basic Web Page</h1>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <div class="column">
+            <h2>About Me</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd_UQohOkLafvY1AkcTqXPhae34T1QZKks4w&usqp=CAU" alt="Your Image" width="300" height="200">
+            <p>
+                Hello! My name is Bala. I'm Owner and HR of RBM Technology.I'm hiring the students with talents and skill and interested ones.If you want to be a part of building an empire,Join us.
+            </p>
+        </div>
+
+        <div class="column">
+            <h2>Eligibility</h2>
+            <ul>
+                <li>No Standing Arrears with CGPA above 8.0</li>
+                <li>12th Percentage above 80</li>
+		<li>10th Percentage above 80</li>
+            </ul>
+        </div>
+
+        <div class="column">
+            <h2>My Favorite Quote</h2>
+            <blockquote>
+                "The only way to do great work is to love what you do." - Steve Jobs
+            </blockquote>
+		<a href="file:///C:/Users/balar/Documents/form.html">For application</a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 RBM. All rights reserved.</p>
+	<p>
+            You can contact me via email: <a href="mailto:balarajendran123@google.com">balarajendran123@google.com</a>
+        </p>
+    </footer>
+
+</body>
+</html>
